@@ -4,7 +4,7 @@ import imgUrl from '@/public/bg-1.jpg';
 
 export default async function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24 text-4xl'>
+    <main className='flex flex-col justify-between items-center p-24 min-h-screen text-4xl'>
       Hello nextJs | Home Page
       <Counter />
       <Image src={imgUrl} alt='test' />

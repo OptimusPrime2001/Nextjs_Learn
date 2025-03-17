@@ -7,13 +7,15 @@ export default async function Page() {
     <div className='flex-1'>
       <div
         aria-label='card-item-v3'
-        className='flex flex-col rounded-xl bg-white border border-gray-100 p-5'
+        className='flex flex-col p-5 bg-white rounded-xl border border-gray-100'
       >
         <div className='relative flex-shrink-0 mb-5 h-[250px]'>
           <Image
             src='https://bit.ly/3zzCTUT'
             alt=''
             className='object-cover w-full h-full rounded-lg'
+            width={200}
+            height={500}
           />
         </div>
         <div className='flex flex-col flex-1'>
