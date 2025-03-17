@@ -16,7 +16,7 @@
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
     "cli": "^1.0.1",
-  "eslint": "8.43.0",
+    "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "next": "^15.2.2",
     "postcss": "8.4.24",
@@ -30,7 +30,7 @@
   "devDependencies": {
     "encoding": "^0.1.13",
     "eslint-config-prettier": "^8.8.0",
-    "sass": "^1.63.6",
+    "sass": "^1.85.1",
     "supabase": "^1.75.3"
   }
 }
