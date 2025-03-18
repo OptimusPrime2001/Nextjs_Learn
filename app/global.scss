@@ -1,6 +1,6 @@
-@import "/styles/reset";
-@import "/styles/variables";
-@import "/styles/mixins";
+@use "../styles/reset";
+@use "../styles/variables";
+@use "../styles/mixins";
 
 @tailwind base;
 @tailwind components;
@@ -20,5 +20,5 @@
   }
 }
 .test{
-  background-color: $primary;
+  background-color: var(--primary);
 }
