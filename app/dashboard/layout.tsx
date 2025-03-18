@@ -4,7 +4,7 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 // import { bodoni_moda } from '@/utils/font';
 import { classNames } from '@/utils/common';
-import styles from '@/styles/dashboard.module.scss';
+import styles from '@styles/dashboard.module.scss';
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const menu = [
     {
@@ -37,7 +37,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
         // bodoni_moda.className,
       )}
     >
-      <header className='flex flex-col justify-between  text-white'>
+      <header className='flex flex-col justify-between text-white'>
         <nav className='flex flex-col'>
           {menu.map((link) => {
             const isActive = pathname.endsWith(link.href);
@@ -45,8 +45,8 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
               <Link
                 className={
                   isActive
-                    ? 'text-black bg-white font-bold p-2'
-                    : 'text-white p-2 bg-black'
+                    ? 'p-2 font-bold text-black bg-white'
+                    : 'p-2 text-white bg-black'
                 }
                 href={link.href}
                 key={link.name}

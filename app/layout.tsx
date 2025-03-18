@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 'use client';
 import Link from 'next/link';
-import './global.scss';
+import '../styles/style.scss';
 import { usePathname } from 'next/navigation';
 import StyledComponentsRegistry from '@/lib/registry';
 import { Advent_Pro } from 'next/font/google';
@@ -70,7 +70,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {' '}
-        <header className='flex justify-between bg-black p-4 text-white font-bold'>
+        <header className='flex justify-between p-4 font-bold text-white bg-black'>
           <Link href='/'>Header RootLayout</Link>
         </header>
         <nav className='flex flex-wrap'>
@@ -83,7 +83,7 @@ export default function RootLayout({
               <Link
                 className={`p-2 rounded-md flex flex-col items-center justify-center bg-black m-2 shadow-sm ${
                   isActive
-                    ? 'text-black border-2 border-black bg-gray-200'
+                    ? 'text-black bg-gray-200 border-2 border-black'
                     : 'text-white'
                 }`}
                 href={link.href}

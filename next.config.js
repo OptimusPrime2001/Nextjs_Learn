@@ -1,11 +1,14 @@
 /**
  * @type {import('next').NextConfig}
  */
+// Update your sassOptions to include prependData
 const path = require('path');
+
 module.exports = {
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
+    prependData: '@use "@styles/variables" as *;',
   },
   images: {
     remotePatterns: [

@@ -12,8 +12,8 @@ type Props = {
   HTMLButtonElement
 >;
 const ButtonStyle = styled.button<Props>`
-  color: yellow;
-  background-color: blue;
+  color: white;
+  background-color: black;
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
