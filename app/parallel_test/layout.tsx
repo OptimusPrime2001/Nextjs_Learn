@@ -1,5 +1,5 @@
-import { classNames } from '@/utils/common';
-import { arima } from '@/utils/font';
+import { classNames } from '@/src/utils/common';
+import { arima } from '@/src/utils/font';
 import Link from 'next/link';
 
 export default function Layout(props: {

@@ -1,11 +1,11 @@
 'use client';
-import useTodos from '@/hooks/useTodos';
+import useTodos from '@/src/hooks/useTodos';
 import React, { useEffect, useState } from 'react';
-import Button from '~/atoms/Button';
-import Input from '~/atoms/Input';
-import View from '~/atoms/View';
-import List from '~/molecules/List';
-import RenderList from '~/molecules/RenderList';
+import Button from '@components/atoms/Button';
+import Input from '@components/atoms/Input';
+import View from '@components/atoms/View';
+import List from '@components/molecules/List';
+import RenderList from '@components/molecules/RenderList';
 
 type Props = {
   name: string;
@@ -44,16 +44,15 @@ export default function TodoPage({}: Props) {
   return (
     <div>
       <Heading title='Levantrung' />
-      <div className='max-w-sm p-5'>
+      <div className='p-5 max-w-sm'>
         <div className='mb-5'>
           {/* {todos &&
             todos?.map((todo) => (
-              <div key={todo.id} className='flex items-center gap-x-3 mb-2'>
+              <div key={todo.id} className='flex gap-x-3 items-center mb-2'>
                 <span>{todo.text}</span>
                 <button
                   onClick={() => onRemoveTodo(todo.id)}
-                  className='p-2 rounded-lg bg-red-500 text-white text-center
-            '
+                  className='p-2 text-center text-white bg-red-500 rounded-lg'
                 >
                   Remove
                 </button>
@@ -69,12 +68,11 @@ export default function TodoPage({}: Props) {
             items={todos}
             keyExtractor={(todo) => todo.id}
             render={(todo) => (
-              <div key={todo.id} className='flex items-center gap-x-3 mb-2'>
+              <div key={todo.id} className='flex gap-x-3 items-center mb-2'>
                 <span>{todo.text}</span>
                 <button
                   onClick={() => onRemoveTodo(todo.id)}
-                  className='p-2 rounded-lg bg-red-500 text-white text-center
-            '
+                  className='p-2 text-center text-white bg-red-500 rounded-lg'
                 >
                   Remove
                 </button>
@@ -82,15 +80,15 @@ export default function TodoPage({}: Props) {
             )}
           />
         </div>
-        <div className='flex items-center gap-x-5'>
+        <div className='flex gap-x-5 items-center'>
           <input
             ref={inputRef}
-            className='p-2 border rounded-lg border-slate-200'
+            className='p-2 rounded-lg border border-slate-200'
             type='text'
           />
           <button
             onClick={onAddTodo}
-            className='p-2 rounded-lg bg-blue-500 text-white text-center'
+            className='p-2 text-center text-white bg-blue-500 rounded-lg'
           >
             Add todos
           </button>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { usePathname } from 'next/navigation';
 // import { bodoni_moda } from '@/utils/font';
-import { classNames } from '@/utils/common';
+import { classNames } from '@/src/utils/common';
 import styles from '@styles/dashboard.module.scss';
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const menu = [

@@ -25,7 +25,7 @@ const page = () => {
       {listProudct.map((product) => (
         <Link
           href={`/product/${product.id}`}
-          className='bg-green-400 p-3 rounded-md cursor-pointer'
+          className='p-3 bg-green-400 rounded-md cursor-pointer'
           key={product.name}
         >
           <h1>{product.name}</h1>

@@ -1,4 +1,4 @@
-import Loading from '@/components/atoms/Loading';
+import Loading from '@/src/components/atoms/Loading';
 import React from 'react';
 
 const LoadingUI = () => {

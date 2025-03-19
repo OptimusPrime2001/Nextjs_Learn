@@ -1,4 +1,4 @@
-import Button from '@/components/atoms/Button';
+import Button from '@/src/components/atoms/Button';
 import React from 'react';
 import './page.scss';
 export const metadata = {

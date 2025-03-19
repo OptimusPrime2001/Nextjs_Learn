@@ -1,5 +1,5 @@
 'use client';
-import Modal from '@/components/atoms/Modal';
+import Modal from '@/src/components/atoms/Modal';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 

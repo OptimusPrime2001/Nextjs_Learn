@@ -1,6 +1,6 @@
 'use client';
-import Frame from '@/components/atoms/Frame';
-import Modal from '@/components/atoms/Modal';
+import Frame from '@/src/components/atoms/Frame';
+import Modal from '@/src/components/atoms/Modal';
 import swagPhotos, { Photo } from '@/photos';
 
 export default function PhotoModal({
