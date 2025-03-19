@@ -1,10 +1,16 @@
 import photos, { Photo } from '@/photos';
-import Frame from '~/atoms/Frame';
-export default function PhotoPage({
-  params: { id: photoId },
-}: {
-  params: { id: string };
-}) {
+import Frame from '@components/atoms/Frame';
+export default async function PhotoPage(
+  props: {
+    params: Promise<{ id: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    id: photoId
+  } = params;
+
   const photoList = photos;
   const photo: Photo = photoList.find((p) => p.id === photoId)!;
   return (

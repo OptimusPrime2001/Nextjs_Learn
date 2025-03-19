@@ -3,7 +3,7 @@ import {
   createServerActionClient,
   createServerComponentClient,
 } from '@supabase/auth-helpers-nextjs';
-import RealtimeAccounts from '~/molecules/RealtimeAccounts';
+import RealtimeAccounts from '@components/molecules/RealtimeAccounts';
 import { revalidatePath } from 'next/cache';
 import Link from 'next/link';
 import AddAccount from './AddAccount';

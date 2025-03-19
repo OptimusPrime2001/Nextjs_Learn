@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 'use client';
 import Link from 'next/link';
-import '../styles/style.scss';
+import '@styles/style.scss';
 import { usePathname } from 'next/navigation';
 import StyledComponentsRegistry from '@/src/lib/registry';
 import { Advent_Pro } from 'next/font/google';

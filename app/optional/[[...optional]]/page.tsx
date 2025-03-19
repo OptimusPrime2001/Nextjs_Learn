@@ -1,8 +1,10 @@
-'use client';
+'use client';;
+import { use } from "react";
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
-export default function Page({ params }: { params: { slug: string } }) {
+export default function Page(props: { params: Promise<{ slug: string }> }) {
+  const params = use(props.params);
   const pathName = useParams();
 
   return (
