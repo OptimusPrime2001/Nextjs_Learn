@@ -1,15 +1,12 @@
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
-import { cookies } from 'next/headers';
 import BlurImage from '@components/atoms/BlurImage';
+import { createClient } from '@utils/supabase/server';
 
 export async function getImages() {
-  const cookieStore = await cookies();
-  const supabaseAdmin = createServerComponentClient({ cookies:()=>cookieStore });
-  let { data: Images } = await supabaseAdmin
-    .from('Images')
-    .select('*')
-    .order('id');
-  return Images;
+  const supabase = await createClient();
+  let { data: clubs } = await supabase
+  .from('clubs')
+  .select('*');
+  return clubs;
 }
 export default async function Page() {
   const images = await getImages();
