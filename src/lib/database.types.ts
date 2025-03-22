@@ -87,16 +87,16 @@ export interface Database {
       };
     };
     Views: {
-      [_ in never]: never;
+      []: never;
     };
     Functions: {
-      [_ in never]: never;
+      []: never;
     };
     Enums: {
-      [_ in never]: never;
+      []: never;
     };
     CompositeTypes: {
-      [_ in never]: never;
+      []: never;
     };
   };
 }

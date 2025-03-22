@@ -4,6 +4,7 @@ interface Data {
 }
 type Props = {
   data: Data[] | null;
+  // eslint-disable-next-line no-unused-vars
   showAlert?: (item: Data) => void;
 };
 export default function List({ data, showAlert }: Props) {
