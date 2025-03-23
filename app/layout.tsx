@@ -73,7 +73,7 @@ export default function RootLayout({
         <header className='flex justify-between p-4 font-bold text-white bg-black'>
           <Link href='/'>Header RootLayout</Link>
         </header>
-        <nav className='flex flex-wrap'>
+        <nav className='flex flex-wrap gap-x-4'>
           {menu.map((link) => {
             const isActive =
               link.href.length > 2
@@ -81,7 +81,7 @@ export default function RootLayout({
                 : pathname === link.href;
             return (
               <Link
-                className={`p-2 rounded-md flex flex-col items-center justify-center bg-black m-2 shadow-sm ${
+                className={`p-2 block rounded-md flex flex-col items-center justify-center bg-black m-2 shadow-sm ${
                   isActive
                     ? 'text-black bg-gray-200 border-2 border-black'
                     : 'text-white'

@@ -1,5 +1,6 @@
 import BlurImage from '@components/atoms/BlurImage';
 import { createClient } from '@utils/supabase/server';
+import styles from './page.module.scss';
 
 export async function getImages() {
   const supabase = await createClient();
@@ -18,6 +19,7 @@ export default async function Page() {
         {clubs &&
           clubs.map((club) => <BlurImage key={club.id} href={club.logo_img} />)}
       </div>
+      <div className={styles.test}>Test biến</div>
     </div>
   );
 }

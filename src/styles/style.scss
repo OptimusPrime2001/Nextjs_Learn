@@ -1,6 +1,4 @@
-// Import variables with namespace *
-
+@forward 'variables';
 @use 'mixins';
 @use 'global';
-@use 'reset';
 @use "tailwindcss";
